@@ -1,13 +1,14 @@
 '''	
 @Author: Aishwarya
 @Date: 2021-11-17 
+@Last: Modified: 2021-11-19 
 @Title : Print 2D Array of different data types
 '''
 ########################################################################################################
 #importing Regex liabrary 
 import re
 
-def AcceptInt(arr,m,n):
+def accept_integers(arr,m,n):
  """"
 Description: entering integer values in rows and columns of 2D Array
 Parameter: arr,m,n
@@ -25,7 +26,7 @@ Return: none
      print ('entry in row: ',i+1,' column: ',j+1)
      arr[i][j] = int(input())
 
-def AcceptFloat(arr,m,n):
+def accept_float(arr,m,n):
     """"
     Description: entering float values in rows and columns of 2D Array
     Parameter: arr,m,n
@@ -43,7 +44,7 @@ def AcceptFloat(arr,m,n):
          print ('entry in row: ',i+1,' column: ',j+1)
          arr[i][j]=float(input())
         
-def AcceptBool(arr,m,n):
+def accept_bool(arr,m,n):
     """"
     Description: entering bool values in rows and columns of 2D Array
     Parameter: arr,m,n
@@ -61,7 +62,7 @@ def AcceptBool(arr,m,n):
          print ('entry in row: ',i+1,' column: ',j+1)
          arr[i][j] =bool(input())
 
-def AcceptStr(arr,m,n) :
+def accept_string(arr,m,n) :
    """"
     Description: entering string values in rows and columns of 2D Array
     Parameter: arr,m,n
@@ -80,7 +81,7 @@ def AcceptStr(arr,m,n) :
          arr[i][j] =input()
  
 
-def Display(arr,m,n):
+def display(arr,m,n):
     """"
     Description: printing different type of 2D Array
     Parameter: arr,m,n
@@ -118,20 +119,20 @@ if __name__=='__main__':
         ch=int(input("Enter Choice:"))
         if ch==1:
              #calling accepting Integer Array and printing function:
-                AcceptInt(arr,row,column)
-                Display(arr,row,column)
+                accept_integers(arr,row,column)
+                display(arr,row,column)
         elif ch==2:
             #calling accepting Float data type Array and printing function:
-                AcceptFloat(arr,row,column)
-                Display(arr,row,column)
+                accept_float(arr,row,column)
+                display(arr,row,column)
         elif ch==3:
              #calling accepting Bool data type Array and printing function:
-                AcceptBool(arr,row,column)
-                Display(arr,row,column)
+                accept_bool(arr,row,column)
+                display(arr,row,column)
         elif ch==4:
              #calling accepting string data type Array and printing function:
-                AcceptStr(arr,row,column)
-                Display(arr,row,column)
+                accept_string(arr,row,column)
+                display(arr,row,column)
         else:print("Invalid Choice")
          
     else: print("Invalid Input")
