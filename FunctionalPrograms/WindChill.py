@@ -1,6 +1,7 @@
 '''	
 @Author: Aishwarya
-@Date: 2021-11-18 
+@Date: 2021-11-18
+@Last: Modified: 2021-11-19 
 @Title : A program that takes two double command-line arguments t and v and prints the wind chill.
 '''
 ########################################################################################################
@@ -8,7 +9,7 @@
 import re
 import math
 
-def WindChill(t,v):
+def wind_chill(t,v):
     """"
     Description: Mathmatical operation 
     Parameter: t,v
@@ -34,6 +35,6 @@ if __name__=='__main__':
     result2=re.match(pattern2,v)
     if result1 and result2:
          #calling function
-        WindChill(t,v)
+        wind_chill(t,v)
     else:
         print("Invalid Input")
